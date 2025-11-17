@@ -128,7 +128,7 @@ const PlatformLayout = () => {
         <div className="flex flex-col min-h-screen">
             {showPlatformNavbar && <PlatformNavbar />} 
             <main className="flex-1">
-                <Routes>
+                <Routes basename="/Portfolio_pro_X/">
                     <Route index element={<Portfolio />} />
                     
                     {/* ✅ Route for the SaaS Demo Page */}
