@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.react-datepicker__day--selected {
+    background-color: #2563eb !important; /* A strong blue color */
+    color: white !important;
+    border-radius: 0.375rem; /* A rounded shape */
+}
+
+/* Highlights the dates that the doctor has availability (from your JS) */
+.react-datepicker__day--highlighted {
+    border-radius: 0.375rem;
+    background-color: #dcfce7; /* A light green color */
+    color: #166534;
+}
+
+/* Styling for the calendar container to fit your modal */
+.react-datepicker {
+    border: 1px solid #e5e7eb !important;
+    font-family: inherit !important;
+}
+
+.react-datepicker__header {
+    background-color: #f3f4f6 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
