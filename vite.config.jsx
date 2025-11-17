@@ -6,6 +6,7 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/Portfolio_pro_X/",
   plugins: [react()], // Removed tailwindcss() - Configure via postcss.config.js
   esbuild: {
     loader: 'jsx',
